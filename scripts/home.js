@@ -132,6 +132,6 @@ window.addEventListener('scroll', () => {
   });
 
   function progetto1(){
-    window.location.href = '../pages/progetto1.html'
+    window.location.href = './pages/progetto1.html'
 }
 
