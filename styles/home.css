@@ -1,0 +1,291 @@
+@font-face {
+	font-family: 'Sora';
+	src: url('../assets/fonts/Sora-VariableFont_wght.ttf') format("truetype-variations");
+}
+
+
+a {
+	all: unset;
+	cursor: pointer;
+	/* no underline */
+  }
+
+  
+  ::-webkit-scrollbar {
+    display: none;
+}
+  
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+  }
+
+
+  body {
+	position: absolute;
+	background-color: #F2F2F2;
+	z-index: +1;
+	user-select: none;
+
+	/* background-image: url(../assets/layout-home.png);
+	background-size: 100%;
+	background-blend-mode: multiply; */
+}
+
+.content {
+	margin-top: 0;
+	margin-left: 1.5vw;
+	width: 97vw;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	position: fixed;
+	z-index: 1;
+}
+
+.header{
+	width: 100%;
+	height: 20vh;
+	padding-top: 5vh;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.sx{
+	width: auto;
+    display: flex;
+    flex-direction: row;
+	gap: 8.2vw;
+}
+
+.bio1{
+	width: 18.2vw;
+	font-size: 1.26vw;
+	font-family: 'Sora';
+	font-weight: 400;
+}
+
+.bio2 {
+	display: flex;
+	flex-direction: row;
+    align-items: flex-start;
+	width: auto;
+	font-size: 1.26vw;
+	font-family: 'Sora';
+	font-weight: 400;
+	gap: 1.5vw;
+}
+
+.icona-star{
+	height: 1.7vw;
+	padding-top: 0.5vh;
+}
+
+.T{
+	width: 18.2vw;
+	font-size: 1.26vw;
+	font-family: 'Sora';
+	font-weight: 400;
+}
+
+#nicole{
+	width: auto;
+	font-size: 1.26vw;
+	font-family: 'Sora';
+	font-weight: 400;
+	text-decoration: underline;
+	text-underline-offset: 0.25vw;
+	text-decoration-thickness: 0.1vw;
+}
+
+
+.dx{
+	width: auto;
+	display: flex;
+	flex-direction: row;
+    justify-content: flex-end;
+	align-items: flex-start;
+	gap: 4.5vw;
+
+}
+
+.contatti{
+	width: auto;
+	font-size: 1.26vw;
+	font-family: 'Sora';
+	font-weight: 400;
+	text-decoration: underline;
+	text-underline-offset: 0.25vw;
+	text-decoration-thickness: 0.1vw;
+	cursor: pointer;
+}
+
+
+#get-in-touch{
+	width: auto;
+	font-size: 1.26vw;
+	font-family: 'Sora';
+	font-weight: 400;
+	text-decoration: underline;
+	text-underline-offset: 0.25vw;
+	text-decoration-thickness: 0.1vw;
+	display: flex;
+	cursor: pointer;
+}
+
+#links{
+	width: 7.9vw;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+	align-items: flex-start;
+	display: none;
+	cursor: pointer;
+}
+
+.icona-menu{
+	width: 1.5vw;
+	padding-top: 0.8vh;
+}
+
+.filtri{
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	gap: 1.5vw;
+	translate: 0, -50% ;
+
+}
+
+.box-filtri{
+	width: 18.2vw;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	gap: 1.2vw;
+}
+
+.icone-filtri{
+	height: 2vw;
+}
+
+.t-filtri{
+	font-size: 0.65vw;
+	font-family: 'Sora';
+	font-weight: 600;
+	text-decoration: underline;
+	text-underline-offset: 0.25vw;
+	text-decoration-thickness: 0.1vw;
+}
+.t-filtri:hover{
+	cursor: pointer;
+}
+
+.footer{
+	width: 100%;
+	height: 20vh;
+	padding-bottom: 5vh;
+	display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+	align-items: flex-end;
+}
+
+
+#hello{
+	position: fixed;
+	margin-top: 80vh;
+	margin-left: 1.5vw;
+	font-size: 9vw;
+	font-family: 'Sora';
+	font-weight: 400;
+	opacity: 0.5;
+	filter: blur(0.9vw);
+	z-index: -1;
+}
+
+#credits{
+	font-size: 0.65vw;
+	font-family: 'Sora';
+	font-weight: 400;
+}
+
+#imgNicole{
+	position: fixed;
+	width: 11.3vw;
+	margin-top: 1.5vw;
+	margin-left: 15vw;
+	display: none;
+	z-index: -1;
+}
+
+.scroll{
+	position:fixed;
+	z-index: +1;
+	margin-left: 50%;
+	width: auto;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+	gap: 1.2vw;
+	transform: translateX(-50%);
+	animation-name: freccia;
+	animation-duration: 2s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	height: 7vh;
+}
+
+@keyframes freccia {
+	0% {margin-top: 83vh;}
+	50% {margin-top: 86vh;}
+	100% {margin-top: 83vh;}
+  }
+
+  @keyframes stop {
+	0% {margin-top: 86vh;}
+	50% {margin-top: 86vh;}
+	100% {margin-top: 86vh;}
+  }
+
+#t-works{
+	font-size: 0.9vw;
+	font-family: 'Sora';
+	font-weight: 500;
+	transition: all 500ms ease;
+}
+
+#icona-freccia{
+	height: 1.5vw;
+	rotate: 0deg;
+	transition: all 500ms ease;
+}
+
+
+.scroll-progetti{
+	margin-left: 19.7vw;
+	width: 60.6vw;
+	height: auto;
+
+}
+
+.sezioni{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+}
+
+.preview-img{
+	widows: 100%;
+	cursor: pointer;
+}

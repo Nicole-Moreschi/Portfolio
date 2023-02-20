@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./styles/home.css">
+  <title>Nicole Moreschi</title>
+</head>
+
+<body>
+
+  <!-- home statica -->
+
+  <div id="hello">HELLO WORLD :)</div>
+  <img id="imgNicole" src="./assets/altro/Nicole.jpg">
+  <div class="scroll" id="scroll">
+    <div id="t-works">selected works</div>
+    <img id="icona-freccia" src="./assets/icons/arrow.svg">
+  </div>
+
+  <div class="content" id="content">
+
+    <div class="header">
+      <div class="sx">
+        <div class="bio1">Hi! I’m <span id="nicole" onmouseover="overImg()" onmouseout="noOverImg()">Nicole
+            Moreschi</span>, <br>a communication design student at PoliMi.</div>
+        <div class="bio2">
+          <img class="icona-star" src="./assets/icons/star.svg">
+          <div class="T">I’m interested in all the design fields that deals with the interaction between people and
+            digital systems.</div>
+        </div>
+      </div>
+      <div class="dx">
+        <div id="get-in-touch" onmouseover="contatti()" onmouseout="noContatti()">Get in touch</div>
+        <div id="links" onmouseover="contatti()" onmouseout="noContatti()">
+          <a href="mailto:nicolemoreschi98@gmail.com" target="_blank" class="contatti">mail</a>
+          <a href="https://www.linkedin.com/in/nicole-moreschi" target="_blank" class="contatti">in</a>
+          <a href="https://www.behance.net/nicolemoreschi1" target="_blank" class="contatti">Bē</a>
+        </div>
+        <img class="icona-menu" src="./assets/icons/menu.svg">
+      </div>
+    </div>
+
+    <div class="filtri">
+      <div class="box-filtri" id="dataviz">
+        <img class="icone-filtri" src="./assets/icons/dataviz.svg">
+        <div class="t-filtri" id="datavix-text">DATA VIZ</div>
+      </div>
+      <div class="box-filtri" id="ux-ui">
+        <img class="icone-filtri" src="./assets/icons/ux-ui.svg">
+        <div class="t-filtri" id="ux-ui-text">UX / UI</div>
+      </div>
+      <div class="box-filtri" id="interaction">
+        <img class="icone-filtri" src="./assets/icons/interaction.svg">
+        <div class="t-filtri" id="interaction-text">INTERACTION</div>
+      </div>
+      <div class="box-filtri" id="branding">
+        <img class="icone-filtri" src="./assets/icons/branding.svg">
+        <div class="t-filtri" id="branding-text">BRANDING</div>
+      </div>
+      <div class="box-filtri" id="editorial">
+        <img class="icone-filtri" src="./assets/icons/editorial.svg">
+        <div class="t-filtri" id="editorial-text">EDITORIAL</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div id="credits">2023 – Coded with &lt;3 by me</div>
+    </div>
+  </div>
+
+  <!-- scroll progetti -->
+  <div class="scroll-progetti" id="scroll-progetti">
+    <div class="sezioni" id="sez0" onmousemove="ruota()"></div>
+    <div class="sezioni" id="prog1">
+      <img class="preview-img" id="prev1" src="./assets/previews/preview1.png" onclick="progetto1()">
+    </div>
+    <div class="sezioni" id="prog2">
+      <img class="preview-img" id="prev2" src="./assets/previews/preview2.png" onclick="progetto1()">
+    </div>
+    <div class="sezioni" id="prog3">
+      <img class="preview-img" id="prev3" src="./assets/previews/preview3.png" onclick="progetto1()">
+    </div>
+    <div class="sezioni" id="prog4">
+      <img class="preview-img" id="prev4" src="./assets/previews/preview4.png" onclick="progetto1()">
+    </div>
+    <div class="sezioni" id="prog5">
+      <img class="preview-img" id="prev5" src="./assets/previews/preview5.png" onclick="progetto1()">
+    </div>
+    <div class="sezioni" id="prog6">
+      <img class="preview-img" id="prev6" src="./assets/previews/preview6.png" onclick="progetto1()">
+    </div>
+    <div class="sezioni" id="prog7">
+      <img class="preview-img" id="prev7" src="./assets/previews/preview7.png" onclick="progetto1()">
+    </div>
+    <div class="sezioni" id="prog8">
+      <img class="preview-img" id="prev8" src="./assets/previews/preview8.png" onclick="progetto1()">
+    </div>
+    <div class="sezioni" id="prog9">
+      <img class="preview-img" id="prev9" src="./assets/previews/preview9.png" onclick="progetto1()">
+    </div>
+    <div class="sezioni" id="prog10">
+      <img class="preview-img" id="prev10" src="./assets/previews/preview10.png" onclick="progetto1()">
+    </div>
+    <div class="sezioni" id="prog11">
+      <img class="preview-img" id="prev11" src="./assets/previews/preview11.png" onclick="progetto1()">
+    </div>
+  </div>
+
+
+
+  <!-- js file -->
+  <script src="./scripts/home.js"></script>
+
+
+</body>
+
+</html>
