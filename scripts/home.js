@@ -135,7 +135,24 @@ window.addEventListener('scroll', () => {
     window.location.href = './pages/progetto1.html'
 }
 
+function menuProgetto1(){
+  window.location.href = './progetto1.html'
+}
+
 function menu(){
   window.location.href = './pages/prova.html'
 }
 
+function closeMenu(){
+  window.location.href = '../index.html'
+}
+
+function anteprima1(){
+  let anteprima1 = document.getElementById("menuPrev1");
+  anteprima1.style.display = "flex"; 
+}
+
+function NOanteprima1(){
+  let anteprima1 = document.getElementById("menuPrev1");
+  anteprima1.style.display = "none"; 
+}
