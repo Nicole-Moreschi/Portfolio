@@ -295,6 +295,8 @@ a {
 
 
 
+
+
 /* menu progetti */
 
 .menuProgetti{
@@ -311,6 +313,7 @@ a {
 	overflow-y: scroll;
 	gap: 0.1vw; 
 	z-index: 1;
+	display: none;
 }
 
 .menuProgetto{

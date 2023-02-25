@@ -24,7 +24,7 @@
   <div class="content" id="content">
 
     <div class="header">
-      <div class="sx">
+      <div class="sx" id="sx">
         <div class="bio1">Hi! I’m <span id="nicole" onmouseover="overImg()" onmouseout="noOverImg()">Nicole
             Moreschi</span>, <br>a communication design student at PoliMi.</div>
         <div class="bio2">
@@ -40,7 +40,7 @@
           <a href="https://www.linkedin.com/in/nicole-moreschi" target="_blank" class="contatti">in</a>
           <a href="https://www.behance.net/nicolemoreschi1" target="_blank" class="contatti">Bē</a>
         </div>
-        <img class="icona-menu" src="./assets/icons/menu.svg" onclick="menu()">
+        <img class="icona-menu" id="iconaMenu" src="./assets/icons/menu.svg" onclick="menu()">
       </div>
     </div>
 
@@ -67,12 +67,15 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="footer">
       <div id="credits">2023 – Coded with &lt;3 by me</div>
     </div>
   </div>
 
+
+
   <!-- scroll progetti -->
+
   <div class="scroll-progetti" id="scroll-progetti">
     <div class="sezioni" id="sez0" onmousemove="ruota()"></div>
     <div class="sezioni" id="prog1">
@@ -110,6 +113,132 @@
     </div>
   </div>
 
+
+  <!-- menu -->
+
+  <div class="menuProgetti" id="menuProgetti">
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto1">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="./assets/icons/dataviz.svg">
+        <div class="t-tag" id="datavix-text">DATA VIZ</div>
+      </div>
+      <div class="anno">2023</div>
+      <div class="titolo" onmouseover="anteprima1()" onmouseout="NOanteprima1()" onclick="progetto1()">Eye to Ai</div>
+      <div class="null"></div>
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto2">
+      <div class="tag" id="tagUxUi">
+        <img class="icone-filtri" src="./assets/icons/ux-ui.svg">
+        <div class="t-tag" id="uxui-text">UX / UI</div>
+      </div>
+      <div class="anno">2022</div>
+      <div class="titolo" onclick="menuProgetto1()">Todo</div>
+      <div class="null"></div>
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto3">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="./assets/icons/interaction.svg">
+        <div class="t-tag" id="datavix-text">INTERACTION</div>
+      </div>
+      <div class="anno">2021</div>
+      <div class="titolo" onclick="menuProgetto1()">12°Uomo</div>
+      <div class="null"></div>
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto4">
+      <div class="tag" id="tagUxUi">
+        <img class="icone-filtri" src="./assets/icons/interaction.svg">
+        <div class="t-tag" id="uxui-text">INTERACTION</div>
+      </div>
+      <div class="anno">2022</div>
+      <div class="titolo" onclick="menuProgetto1()">One More Candy</div>
+      <div class="null"></div>
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto5">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="./assets/icons/interaction.svg">
+        <div class="t-tag" id="datavix-text">INTERACTION</div>
+      </div>
+      <div class="anno">2021</div>
+      <div class="titolo" onclick="menuProgetto1()">Mouse Party</div>
+      <div class="null"></div>
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto6">
+      <div class="tag" id="tagUxUi">
+        <img class="icone-filtri" src="./assets/icons/interaction.svg">
+        <div class="t-tag" id="uxui-text">INTERACTION</div>
+      </div>
+      <div class="anno">2020</div>
+      <div class="titolo" onclick="menuProgetto1()">Robbin’ the Crown</div>
+      <div class="null"></div>
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto7">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="./assets/icons/branding.svg">
+        <div class="t-tag" id="datavix-text">BRANDING</div>
+      </div>
+      <div class="anno">2020</div>
+      <div class="titolo" onclick="menuProgetto1()">Midnight Dreary</div>
+      <div class="null"></div>
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto8">
+      <div class="tag" id="tagUxUi">
+        <img class="icone-filtri" src="./assets/icons/branding.svg">
+        <div class="t-tag" id="uxui-text">BRANDING</div>
+      </div>
+      <div class="anno">2021</div>
+      <div class="titolo" onclick="menuProgetto1()">Workshop Negroni</div>
+      <div class="null"></div>
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto9">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="./assets/icons/editorial.svg">
+        <div class="t-tag" id="datavix-text">EDITORIAL</div>
+      </div>
+      <div class="anno">2020</div>
+      <div class="titolo" onclick="menuProgetto1()">Specimen Fedra</div>
+      <div class="null"></div>
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto10">
+      <div class="tag" id="tagUxUi">
+        <img class="icone-filtri" src="./assets/icons/editorial.svg">
+        <div class="t-tag" id="uxui-text">EDITORIAL</div>
+      </div>
+      <div class="anno">2021</div>
+      <div class="titolo" onclick="menuProgetto1()">Golden Ratio</div>
+      <div class="null"></div>
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto11">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="./assets/icons/editorial.svg">
+        <div class="t-tag" id="datavix-text">EDITORIAL</div>
+      </div>
+      <div class="anno">2019</div>
+      <div class="titolo" onclick="menuProgetto1()">Universi</div>
+      <div class="null"></div>
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+    </div>
+  </div>
 
 
   <!-- js file -->

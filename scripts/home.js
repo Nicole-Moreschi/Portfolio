@@ -1,4 +1,5 @@
 
+let i = 0;
 
 
 function overImg(){
@@ -135,16 +136,106 @@ window.addEventListener('scroll', () => {
     window.location.href = './pages/progetto1.html'
 }
 
-function menuProgetto1(){
-  window.location.href = './progetto1.html'
-}
-
 function menu(){
-  window.location.href = './pages/prova.html'
-}
+  if (i==0){
+  let apriMenu = document.getElementById("scroll-progetti");
+  apriMenu.style.display = "none"; 
+  let menuProgetti = document.getElementById("menuProgetti");
+  menuProgetti.style.display = "flex"; 
+  let iconaMenu = document.getElementById("iconaMenu");
+  iconaMenu.src = "./assets/icons/close.svg"; 
 
-function closeMenu(){
-  window.location.href = '../index.html'
+  let scroll = document.getElementById("scroll");
+    scroll.style.display="none"
+    let content = document.getElementById("content");
+    content.style.zIndex = "-1";
+
+    let sx = document.getElementById("sx");
+    sx.style.opacity = "0"; 
+    let footer = document.getElementById("footer");
+    footer.style.opacity = "0"; 
+    let hello = document.getElementById("hello");
+    hello.style.opacity = "0.25"; 
+
+    let filtri1 = document.getElementById("dataviz");
+    filtri1.style.opacity = "0.25"; 
+    filtri1.style.filter = "blur(0.2vw)";
+    let dataviz = document.getElementById("datavix-text");
+    dataviz.style.pointerEvents = "none"; 
+    let filtri2 = document.getElementById("ux-ui");
+    filtri2.style.opacity = "0.25"; 
+    filtri2.style.filter = "blur(0.2vw)";
+    let uxui = document.getElementById("ux-ui-text");
+    uxui.style.pointerEvents = "none"; 
+    let filtri3 = document.getElementById("interaction");
+    filtri3.style.opacity = "0.25"; 
+    filtri3.style.filter = "blur(0.2vw)";
+    let interaction = document.getElementById("interaction-text");
+    interaction.style.pointerEvents = "none"; 
+    let filtri4 = document.getElementById("branding");
+    filtri4.style.opacity = "0.25"; 
+    filtri4.style.filter = "blur(0.2vw)";
+    let branding = document.getElementById("branding-text");
+    branding.style.pointerEvents = "none"; 
+    let filtri5 = document.getElementById("editorial");
+    filtri5.style.opacity = "0.25"; 
+    filtri5.style.filter = "blur(0.2vw)";
+    let editorial = document.getElementById("editorial-text");
+    editorial.style.pointerEvents = "none"; 
+    let freccia = document.getElementById("icona-freccia");
+    freccia.style.cursor = "pointer"; 
+    i=1
+    console.log(i)
+  
+  } else if (i==1){
+    let apriMenu = document.getElementById("scroll-progetti");
+    apriMenu.style.display = "block"; 
+    let menuProgetti = document.getElementById("menuProgetti");
+    menuProgetti.style.display = "none"; 
+    let iconaMenu = document.getElementById("iconaMenu");
+    iconaMenu.src = "./assets/icons/menu.svg"; 
+
+    let scroll = document.getElementById("scroll");
+    scroll.style.display="flex"
+    let content = document.getElementById("content");
+    content.style.zIndex = "1";
+
+    let sx = document.getElementById("sx");
+    sx.style.opacity = "1"; 
+    let footer = document.getElementById("footer");
+    footer.style.opacity = "1"; 
+    let hello = document.getElementById("hello");
+    hello.style.opacity = "0.5"; 
+    
+    let filtri1 = document.getElementById("dataviz");
+    filtri1.style.opacity = "1"; 
+    filtri1.style.filter = "blur(0)";
+    let dataviz = document.getElementById("datavix-text");
+    dataviz.style.pointerEvents = "auto"; 
+    let filtri2 = document.getElementById("ux-ui");
+    filtri2.style.opacity = "1"; 
+    filtri2.style.filter = "blur(0)";
+    let uxui = document.getElementById("ux-ui-text");
+    uxui.style.pointerEvents = "auto"; 
+    let filtri3 = document.getElementById("interaction");
+    filtri3.style.opacity = "1"; 
+    filtri3.style.filter = "blur(0)";
+    let interaction = document.getElementById("interaction-text");
+    interaction.style.pointerEvents = "auto"; 
+    let filtri4 = document.getElementById("branding");
+    filtri4.style.opacity = "1"; 
+    filtri4.style.filter = "blur(0)";
+    let branding = document.getElementById("branding-text");
+    branding.style.pointerEvents = "auto"; 
+    let filtri5 = document.getElementById("editorial");
+    filtri5.style.opacity = "1"; 
+    filtri5.style.filter = "blur(0)";
+    let editorial = document.getElementById("editorial-text");
+    editorial.style.pointerEvents = "auto";
+    i=0
+    console.log(i)
+
+  }
 }
 
 function anteprima1(){
