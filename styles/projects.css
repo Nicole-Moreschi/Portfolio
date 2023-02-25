@@ -28,9 +28,10 @@ a {
 	background-color: #F2F2F2;
 	user-select: none;
 
-	/* background-image: url(../assets/layout-menu.png);
+	/* background-image: url(../assets/layout-prog.png);
 	background-size: 100%;
-	background-blend-mode: multiply; */
+	background-blend-mode: multiply;
+	background-repeat: no-repeat; */
 }
 
 .content {
@@ -41,9 +42,9 @@ a {
 	overflow: hidden;
 	display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 	position: fixed;
-	z-index: 1;
+	z-index: -1;
 }
 
 .header{
@@ -63,45 +64,6 @@ a {
 	gap: 8.2vw;
 }
 
-.bio1{
-	width: 18.2vw;
-	font-size: 1.26vw;
-	font-family: 'Sora';
-	font-weight: 400;
-}
-
-.bio2 {
-	display: flex;
-	flex-direction: row;
-    align-items: flex-start;
-	width: auto;
-	font-size: 1.26vw;
-	font-family: 'Sora';
-	font-weight: 400;
-	gap: 1.5vw;
-}
-
-.icona-star{
-	height: 1.7vw;
-	padding-top: 0.5vh;
-}
-
-.T{
-	width: 18.2vw;
-	font-size: 1.26vw;
-	font-family: 'Sora';
-	font-weight: 400;
-}
-
-#nicole{
-	width: auto;
-	font-size: 1.26vw;
-	font-family: 'Sora';
-	font-weight: 400;
-	text-decoration: underline;
-	text-underline-offset: 0.25vw;
-	text-decoration-thickness: 0.1vw;
-}
 
 
 .dx{
@@ -191,44 +153,6 @@ a {
 	cursor: pointer;
 }
 
-.footer{
-	width: 100%;
-	height: 20vh;
-	padding-bottom: 5vh;
-	display: flex;
-    flex-direction: row;
-    justify-content:flex-end;
-	align-items: flex-end;
-}
-
-
-#hello{
-	position: fixed;
-	margin-top: 80vh;
-	margin-left: 1.5vw;
-	font-size: 9vw;
-	font-family: 'Sora';
-	font-weight: 400;
-	opacity: 0.5;
-	filter: blur(0.9vw);
-	z-index: -1;
-}
-
-#credits{
-	font-size: 0.7vw;
-	font-family: 'Sora';
-	font-weight: 400;
-}
-
-#imgNicole{
-	position: fixed;
-	width: 11.3vw;
-	margin-top: 1.5vw;
-	margin-left: 19vw;
-	display: none;
-	z-index: -1;
-	transform: translate(calc(-50% + 10vw * var(--x)));
-}
 
 .scroll{
 	position:fixed;
@@ -271,13 +195,32 @@ a {
 	height: 1.5vw;
 	rotate: 0deg;
 	transition: all 500ms ease;
+	cursor: pointer;
+	z-index: 1;
 }
 
 
-.scroll-progetti{
+.back{
+	width: 18.2vw;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 1.5vw;
+}
+
+.icona-back{
+	height: 1.5vw;
+	rotate: 90deg;
+	padding-left: 0.7vw;
+	cursor: pointer;
+}
+
+
+.scroll-progetto{
+	position: absolute;
 	margin-left: 19.7vw;
 	width: 60.6vw;
 	height: auto;
+	z-index: -1;
 }
 
 .sezioni{
@@ -285,16 +228,110 @@ a {
 	height: 100vh;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
-.preview-img{
-	width: 100%;
+#abstract{
+	height: 50vh;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+
+#sez0{
+	position:absolute;
+	margin-top: 20vh;
+	margin-left: 1.5vw;
+	width: 97vw;
+	height: 80vh;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+	align-items: center;
+	gap: 0.1vw; 
+	z-index: 1;
+}
+
+.introProj{
+	width: 97vw;
+	height: 80vh;
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+	align-items: flex-start;
+	gap: 1.5vw;
+}
+
+.infoProj{
+	width: 18.2vw;
+	height: auto;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.nomeProj{
+	width: 18.2vw;
+	font-size: 1.26vw;
+	font-family: 'Sora';
+	font-weight: 400;
+	height: 10vh;
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1vw;
+}
+
+.info{
+	width: 18.2vw;
+	font-size: 0.65vw;
+	font-family: 'Sora';
+	font-weight: 600;
+	height: auto;
+	padding-bottom: 1.5vw;
+}
+
+.text{
+	font-size: 0.7vw;
+	font-family: 'Sora';
+	font-weight: 400;
+}
+
+#tesi{
+	text-decoration: underline;
+	text-underline-offset: 0.25vw;
+	text-decoration-thickness: 0.1vw;
 	cursor: pointer;
 }
 
+.immagine{
+	width: 57.6vw;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
 
 
+.preview-img{
+	width: 100%;
+	height: auto;
+}
 
+.cover-img{
+	height: auto;
+}
+
+.Tabstract{
+	font-size: 1.26vw;
+	font-family: 'Sora';
+	font-weight: 400;
+}
 
 /* menu progetti */
 
@@ -328,6 +365,7 @@ a {
 .tag{
 	width: 18.2vw;
 	padding-left: 1.5vw;
+	height: 10vh;
 	display: flex;
     flex-direction: row;
     justify-content: flex-start;

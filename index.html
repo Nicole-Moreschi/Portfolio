@@ -46,23 +46,23 @@
 
     <div class="filtri">
       <div class="box-filtri" id="dataviz">
-        <img class="icone-filtri" src="./assets/icons/dataviz.svg">
+        <img class="icone-filtri" id="datavixIcon" src="./assets/icons/dataviz.svg">
         <div class="t-filtri" id="datavix-text">DATA VIZ</div>
       </div>
       <div class="box-filtri" id="ux-ui">
-        <img class="icone-filtri" src="./assets/icons/ux-ui.svg">
+        <img class="icone-filtri" id="uxuiIcon" src="./assets/icons/ux-ui.svg">
         <div class="t-filtri" id="ux-ui-text">UX / UI</div>
       </div>
       <div class="box-filtri" id="interaction">
-        <img class="icone-filtri" src="./assets/icons/interaction.svg">
+        <img class="icone-filtri" id="interactionIcon" src="./assets/icons/interaction.svg">
         <div class="t-filtri" id="interaction-text">INTERACTION</div>
       </div>
       <div class="box-filtri" id="branding">
-        <img class="icone-filtri" src="./assets/icons/branding.svg">
+        <img class="icone-filtri" id="brandingIcon" src="./assets/icons/branding.svg">
         <div class="t-filtri" id="branding-text">BRANDING</div>
       </div>
       <div class="box-filtri" id="editorial">
-        <img class="icone-filtri" src="./assets/icons/editorial.svg">
+        <img class="icone-filtri" id="editorialIcon" src="./assets/icons/editorial.svg">
         <div class="t-filtri" id="editorial-text">EDITORIAL</div>
       </div>
     </div>
@@ -77,7 +77,7 @@
   <!-- scroll progetti -->
 
   <div class="scroll-progetti" id="scroll-progetti">
-    <div class="sezioni" id="sez0" onmousemove="ruota()"></div>
+    <div class="sezioni" id="sez0" onmousemove="home()"></div>
     <div class="sezioni" id="prog1">
       <img class="preview-img" id="prev1" src="./assets/previews/preview1.png" onclick="progetto1()">
     </div>
@@ -126,7 +126,7 @@
       <div class="anno">2023</div>
       <div class="titolo" onmouseover="anteprima1()" onmouseout="NOanteprima1()" onclick="progetto1()">Eye to Ai</div>
       <div class="null"></div>
-      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div> 
     </div>
     <div class="raw"></div>
     <div class="menuProgetto" id="menuProgetto2">
@@ -135,9 +135,9 @@
         <div class="t-tag" id="uxui-text">UX / UI</div>
       </div>
       <div class="anno">2022</div>
-      <div class="titolo" onclick="menuProgetto1()">Todo</div>
+      <div class="titolo" onmouseover="anteprima2()" onmouseout="NOanteprima2()" onclick="progetto1()">Todo</div>
       <div class="null"></div>
-      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div> 
     </div>
     <div class="raw"></div>
     <div class="menuProgetto" id="menuProgetto3">
@@ -146,9 +146,9 @@
         <div class="t-tag" id="datavix-text">INTERACTION</div>
       </div>
       <div class="anno">2021</div>
-      <div class="titolo" onclick="menuProgetto1()">12°Uomo</div>
+      <div class="titolo" onmouseover="anteprima3()" onmouseout="NOanteprima3()" onclick="progetto1()">12°Uomo</div>
       <div class="null"></div>
-      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div> 
     </div>
     <div class="raw"></div>
     <div class="menuProgetto" id="menuProgetto4">
@@ -157,9 +157,9 @@
         <div class="t-tag" id="uxui-text">INTERACTION</div>
       </div>
       <div class="anno">2022</div>
-      <div class="titolo" onclick="menuProgetto1()">One More Candy</div>
+      <div class="titolo" onmouseover="anteprima4()" onmouseout="NOanteprima4()" onclick="progetto1()">One More Candy</div>
       <div class="null"></div>
-      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div> 
     </div>
     <div class="raw"></div>
     <div class="menuProgetto" id="menuProgetto5">
@@ -168,9 +168,9 @@
         <div class="t-tag" id="datavix-text">INTERACTION</div>
       </div>
       <div class="anno">2021</div>
-      <div class="titolo" onclick="menuProgetto1()">Mouse Party</div>
+      <div class="titolo" onmouseover="anteprima5()" onmouseout="NOanteprima5()" onclick="progetto1()">Mouse Party</div>
       <div class="null"></div>
-      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div> 
     </div>
     <div class="raw"></div>
     <div class="menuProgetto" id="menuProgetto6">
@@ -179,9 +179,9 @@
         <div class="t-tag" id="uxui-text">INTERACTION</div>
       </div>
       <div class="anno">2020</div>
-      <div class="titolo" onclick="menuProgetto1()">Robbin’ the Crown</div>
+      <div class="titolo" onmouseover="anteprima6()" onmouseout="NOanteprima6()" onclick="progetto1()">Robbin’ the Crown</div>
       <div class="null"></div>
-      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div> 
     </div>
     <div class="raw"></div>
     <div class="menuProgetto" id="menuProgetto7">
@@ -190,9 +190,9 @@
         <div class="t-tag" id="datavix-text">BRANDING</div>
       </div>
       <div class="anno">2020</div>
-      <div class="titolo" onclick="menuProgetto1()">Midnight Dreary</div>
+      <div class="titolo" onmouseover="anteprima7()" onmouseout="NOanteprima7()" onclick="progetto1()">Midnight Dreary</div>
       <div class="null"></div>
-      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div> 
     </div>
     <div class="raw"></div>
     <div class="menuProgetto" id="menuProgetto8">
@@ -201,9 +201,9 @@
         <div class="t-tag" id="uxui-text">BRANDING</div>
       </div>
       <div class="anno">2021</div>
-      <div class="titolo" onclick="menuProgetto1()">Workshop Negroni</div>
+      <div class="titolo" onmouseover="anteprima8()" onmouseout="NOanteprima8()" onclick="progetto1()">Workshop Negroni</div>
       <div class="null"></div>
-      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div> 
     </div>
     <div class="raw"></div>
     <div class="menuProgetto" id="menuProgetto9">
@@ -212,9 +212,9 @@
         <div class="t-tag" id="datavix-text">EDITORIAL</div>
       </div>
       <div class="anno">2020</div>
-      <div class="titolo" onclick="menuProgetto1()">Specimen Fedra</div>
+      <div class="titolo" onmouseover="anteprima9()" onmouseout="NOanteprima9()" onclick="progetto1()">Specimen Fedra</div>
       <div class="null"></div>
-      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div> 
     </div>
     <div class="raw"></div>
     <div class="menuProgetto" id="menuProgetto10">
@@ -223,9 +223,9 @@
         <div class="t-tag" id="uxui-text">EDITORIAL</div>
       </div>
       <div class="anno">2021</div>
-      <div class="titolo" onclick="menuProgetto1()">Golden Ratio</div>
+      <div class="titolo" onmouseover="anteprima10()" onmouseout="NOanteprima10()" onclick="progetto1()">Golden Ratio</div>
       <div class="null"></div>
-      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div> 
     </div>
     <div class="raw"></div>
     <div class="menuProgetto" id="menuProgetto11">
@@ -234,11 +234,26 @@
         <div class="t-tag" id="datavix-text">EDITORIAL</div>
       </div>
       <div class="anno">2019</div>
-      <div class="titolo" onclick="menuProgetto1()">Universi</div>
+      <div class="titolo" onmouseover="anteprima11()" onmouseout="NOanteprima11()" onclick="progetto1()">Universi</div>
       <div class="null"></div>
-      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow"></div> 
+      <div class="vai"><img src="./assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div> 
     </div>
+    <div class="raw"></div>
+    <div class="menuProgetto"></div>
+    <div class="menuProgetto"></div>
   </div>
+  <img class="preview-img-menu" id="menuPrev1" src="./assets/previews/preview1.png">
+  <img class="preview-img-menu" id="menuPrev2" src="./assets/previews/preview2.png">
+  <img class="preview-img-menu" id="menuPrev3" src="./assets/previews/preview3.png">
+  <img class="preview-img-menu" id="menuPrev4" src="./assets/previews/preview4.png">
+  <img class="preview-img-menu" id="menuPrev5" src="./assets/previews/preview5.png">
+  <img class="preview-img-menu" id="menuPrev6" src="./assets/previews/preview6.png">
+  <img class="preview-img-menu" id="menuPrev7" src="./assets/previews/preview7.png">
+  <img class="preview-img-menu" id="menuPrev8" src="./assets/previews/preview8.png">
+  <img class="preview-img-menu" id="menuPrev9" src="./assets/previews/preview9.png">
+  <img class="preview-img-menu" id="menuPrev10" src="./assets/previews/preview10.png">
+  <img class="preview-img-menu" id="menuPrev11" src="./assets/previews/preview11.png">
+
 
 
   <!-- js file -->

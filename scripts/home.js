@@ -1,5 +1,20 @@
 
-let i = 0;
+//---------------------------- get mouse x,y -------------------------//
+const pos = { x : 0, y : 0 };
+
+const saveCursorPosition = function(x, y) {
+        pos.x = (x / window.innerWidth).toFixed(2);
+        pos.y = (y - window.innerHeight/4 )+ "px";
+
+        document.documentElement.style.setProperty('--x', pos.x);
+        document.documentElement.style.setProperty('--y', pos.y);
+     }
+
+  document.addEventListener('mousemove', e => { saveCursorPosition(e.clientX, e.clientY); })
+  
+  
+  
+  let i = 0;
 
 
 function overImg(){
@@ -27,7 +42,7 @@ function noContatti(){
     links.style.display = "none";
 }
 
-function ruota(){
+function home(){
     let freccia = document.getElementById("icona-freccia");
     freccia.style.rotate = "0deg";
     freccia.style.cursor = "cursor"; 
@@ -43,26 +58,36 @@ function ruota(){
     filtri1.style.filter = "blur(0)";
     let dataviz = document.getElementById("datavix-text");
     dataviz.style.pointerEvents = "auto"; 
+    let datavizIcon = document.getElementById("datavixIcon");
+    datavizIcon.style.pointerEvents = "auto";
     let filtri2 = document.getElementById("ux-ui");
     filtri2.style.opacity = "1"; 
     filtri2.style.filter = "blur(0)";
     let uxui = document.getElementById("ux-ui-text");
     uxui.style.pointerEvents = "auto"; 
+    let uxuiIcon = document.getElementById("uxuiIcon");
+    uxuiIcon.style.pointerEvents = "auto";
     let filtri3 = document.getElementById("interaction");
     filtri3.style.opacity = "1"; 
     filtri3.style.filter = "blur(0)";
     let interaction = document.getElementById("interaction-text");
     interaction.style.pointerEvents = "auto"; 
+    let interactionIcon = document.getElementById("interactionIcon");
+    interactionIcon.style.pointerEvents = "auto"; 
     let filtri4 = document.getElementById("branding");
     filtri4.style.opacity = "1"; 
     filtri4.style.filter = "blur(0)";
     let branding = document.getElementById("branding-text");
-    branding.style.pointerEvents = "auto"; 
+    branding.style.pointerEvents = "auto";
+    let brandingIcon = document.getElementById("brandingIcon");
+    brandingIcon.style.pointerEvents = "auto"; 
     let filtri5 = document.getElementById("editorial");
     filtri5.style.opacity = "1"; 
     filtri5.style.filter = "blur(0)";
     let editorial = document.getElementById("editorial-text");
     editorial.style.pointerEvents = "auto";
+    let editorialIcon = document.getElementById("editorialIcon");
+    editorialIcon.style.pointerEvents = "auto"; 
 }
 
 window.addEventListener('scroll', () => {
@@ -81,26 +106,36 @@ window.addEventListener('scroll', () => {
     filtri1.style.filter = "blur(0.2vw)";
     let dataviz = document.getElementById("datavix-text");
     dataviz.style.pointerEvents = "none"; 
+    let datavizIcon = document.getElementById("datavixIcon");
+    datavizIcon.style.pointerEvents = "none";
     let filtri2 = document.getElementById("ux-ui");
     filtri2.style.opacity = "0.5"; 
     filtri2.style.filter = "blur(0.2vw)";
     let uxui = document.getElementById("ux-ui-text");
     uxui.style.pointerEvents = "none"; 
+    let uxuiIcon = document.getElementById("uxuiIcon");
+    uxuiIcon.style.pointerEvents = "none";
     let filtri3 = document.getElementById("interaction");
     filtri3.style.opacity = "0.5"; 
     filtri3.style.filter = "blur(0.2vw)";
     let interaction = document.getElementById("interaction-text");
     interaction.style.pointerEvents = "none"; 
+    let interactionIcon = document.getElementById("interactionIcon");
+    interactionIcon.style.pointerEvents = "none"; 
     let filtri4 = document.getElementById("branding");
     filtri4.style.opacity = "0.5"; 
     filtri4.style.filter = "blur(0.2vw)";
     let branding = document.getElementById("branding-text");
     branding.style.pointerEvents = "none"; 
+    let brandingIcon = document.getElementById("brandingIcon");
+    brandingIcon.style.pointerEvents = "none"; 
     let filtri5 = document.getElementById("editorial");
     filtri5.style.opacity = "0.5"; 
     filtri5.style.filter = "blur(0.2vw)";
     let editorial = document.getElementById("editorial-text");
     editorial.style.pointerEvents = "none"; 
+    let editorialIcon = document.getElementById("editorialIcon");
+    editorialIcon.style.pointerEvents = "none"; 
     freccia.style.cursor = "pointer"; 
   });
 
@@ -116,16 +151,31 @@ window.addEventListener('scroll', () => {
   document.getElementById("datavix-text").addEventListener('click', () => {
     scrollTo(document.getElementById("prog1"));
   });
+  document.getElementById("datavixIcon").addEventListener('click', () => {
+    scrollTo(document.getElementById("prog1"));
+  });
   document.getElementById("ux-ui-text").addEventListener('click', () => {
+    scrollTo(document.getElementById("prog2"));
+  });
+  document.getElementById("uxuiIcon").addEventListener('click', () => {
     scrollTo(document.getElementById("prog2"));
   });
   document.getElementById("interaction-text").addEventListener('click', () => {
     scrollTo(document.getElementById("prog3"));
   });
+  document.getElementById("interactionIcon").addEventListener('click', () => {
+    scrollTo(document.getElementById("prog3"));
+  });
   document.getElementById("branding-text").addEventListener('click', () => {
     scrollTo(document.getElementById("prog7"));
   });
+  document.getElementById("brandingIcon").addEventListener('click', () => {
+    scrollTo(document.getElementById("prog7"));
+  });
   document.getElementById("editorial-text").addEventListener('click', () => {
+    scrollTo(document.getElementById("prog9"));
+  });
+  document.getElementById("editorialIcon").addEventListener('click', () => {
     scrollTo(document.getElementById("prog9"));
   });
   document.getElementById("icona-freccia").addEventListener('click', () => {
@@ -238,12 +288,125 @@ function menu(){
   }
 }
 
+
+
 function anteprima1(){
-  let anteprima1 = document.getElementById("menuPrev1");
-  anteprima1.style.display = "flex"; 
+  let anteprima = document.getElementById("menuPrev1");
+  anteprima.style.display = "flex"; 
+  anteprima.src = "./assets/previews/min/preview1.png"
+}
+
+function anteprima2(){
+  let anteprima = document.getElementById("menuPrev2");
+  anteprima.style.display = "flex"; 
+  anteprima.src = "./assets/previews/min/preview2.png"
+}
+
+function anteprima3(){
+  let anteprima = document.getElementById("menuPrev3");
+  anteprima.style.display = "flex"; 
+  anteprima.src = "./assets/previews/min/preview3.png"
+}
+
+function anteprima4(){
+  let anteprima = document.getElementById("menuPrev4");
+  anteprima.style.display = "flex"; 
+  anteprima.src = "./assets/previews/min/preview4.png"
+}
+
+function anteprima5(){
+  let anteprima = document.getElementById("menuPrev5");
+  anteprima.style.display = "flex"; 
+  anteprima.src = "./assets/previews/min/preview5.png"
+}
+
+function anteprima6(){
+  let anteprima = document.getElementById("menuPrev6");
+  anteprima.style.display = "flex"; 
+  anteprima.src = "./assets/previews/min/preview6.png"
+}
+
+function anteprima7(){
+  let anteprima = document.getElementById("menuPrev7");
+  anteprima.style.display = "flex"; 
+  anteprima.src = "./assets/previews/min/preview7.png"
+}
+
+function anteprima8(){
+  let anteprima = document.getElementById("menuPrev8");
+  anteprima.style.display = "flex"; 
+  anteprima.src = "./assets/previews/min/preview8.png"
+}
+
+function anteprima9(){
+  let anteprima = document.getElementById("menuPrev9");
+  anteprima.style.display = "flex"; 
+  anteprima.src = "./assets/previews/min/preview9.png"
+}
+
+function anteprima10(){
+  let anteprima = document.getElementById("menuPrev10");
+  anteprima.style.display = "flex"; 
+  anteprima.src = "./assets/previews/min/preview10.png"
+}
+
+function anteprima11(){
+  let anteprima = document.getElementById("menuPrev11");
+  anteprima.style.display = "flex"; 
+  anteprima.src = "./assets/previews/min/preview11.png"
 }
 
 function NOanteprima1(){
-  let anteprima1 = document.getElementById("menuPrev1");
-  anteprima1.style.display = "none"; 
+  let anteprima = document.getElementById("menuPrev1");
+  anteprima.style.display = "none"; 
+}
+
+function NOanteprima2(){
+  let anteprima = document.getElementById("menuPrev2");
+  anteprima.style.display = "none"; 
+}
+
+function NOanteprima3(){
+  let anteprima = document.getElementById("menuPrev3");
+  anteprima.style.display = "none"; 
+}
+
+function NOanteprima4(){
+  let anteprima = document.getElementById("menuPrev4");
+  anteprima.style.display = "none"; 
+}
+
+function NOanteprima5(){
+  let anteprima = document.getElementById("menuPrev5");
+  anteprima.style.display = "none"; 
+}
+
+function NOanteprima6(){
+  let anteprima = document.getElementById("menuPrev6");
+  anteprima.style.display = "none"; 
+}
+
+function NOanteprima7(){
+  let anteprima = document.getElementById("menuPrev7");
+  anteprima.style.display = "none"; 
+}
+
+function NOanteprima8(){
+  let anteprima = document.getElementById("menuPrev8");
+  anteprima.style.display = "none"; 
+}
+
+function NOanteprima9(){
+  let anteprima = document.getElementById("menuPrev9");
+  anteprima.style.display = "none"; 
+}
+
+function NOanteprima10(){
+  let anteprima = document.getElementById("menuPrev10");
+  anteprima.style.display = "none"; 
+}
+
+function NOanteprima11(){
+  let anteprima = document.getElementById("menuPrev11");
+  anteprima.style.display = "none"; 
 }
