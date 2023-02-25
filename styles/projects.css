@@ -233,7 +233,8 @@ a {
 }
 
 #abstract{
-	height: 50vh;
+	height: 40vh;
+	/* padding-top: 5vh; */
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
@@ -331,6 +332,17 @@ a {
 	font-size: 1.26vw;
 	font-family: 'Sora';
 	font-weight: 400;
+}
+
+.videoPc{
+border: 0.4vw solid #000000;
+border-radius: 2vw;
+}
+
+#progettuale{
+	width: 100vw;
+	margin-left: -19.7vw;
+	z-index: +1;
 }
 
 /* menu progetti */

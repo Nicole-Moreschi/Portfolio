@@ -247,3 +247,12 @@ function showProj(){
   let scrollProgetto = document.getElementById("scrollProgetto");
   scrollProgetto.style.display = "block"; 
 }
+
+window.addEventListener("scroll", (event) => {
+  let scroll = this.scrollY;
+  if (scroll/window.innerHeight > 1.3){
+      var vid = document.getElementById("videoProgettuale"); 
+      vid.play(); 
+  }
+});
+

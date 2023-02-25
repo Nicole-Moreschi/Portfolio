@@ -182,8 +182,8 @@ window.addEventListener('scroll', () => {
     scrollTo(document.getElementById("sez0"));
   });
 
-  function progetto1(){
-    window.location.href = './pages/progetto1.html'
+  function progetto3(){
+    window.location.href = './pages/progetto3.html'
 }
 
 function menu(){
