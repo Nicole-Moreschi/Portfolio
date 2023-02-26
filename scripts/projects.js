@@ -265,3 +265,36 @@ window.addEventListener("scroll", (event) => {
   }
 });
 
+function progetto1() {
+  window.location.href = "./progetto1.html";
+}
+function progetto2() {
+  window.location.href = "./progetto2.html";
+}
+function progetto3() {
+  window.location.href = "./progetto3.html";
+}
+function progetto4() {
+  window.location.href = "./progetto4.html";
+}
+function progetto5() {
+  window.location.href = "./progetto5.html";
+}
+function progetto6() {
+  window.location.href = "./progetto6.html";
+}
+function progetto7() {
+  window.location.href = "./progetto7.html";
+}
+function progetto8() {
+  window.location.href = "./progetto8.html";
+}
+function progetto9() {
+  window.location.href = "./progetto9.html";
+}
+function progetto10() {
+  window.location.href = "./progetto10.html";
+}
+function progetto11() {
+  window.location.href = "./progetto11.html";
+}
