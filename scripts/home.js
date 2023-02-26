@@ -42,6 +42,16 @@ function noContatti(){
     links.style.display = "none";
 }
 
+window.addEventListener("scroll", (event) => {
+  let scroll = this.scrollY;
+  if (scroll/window.innerHeight > 0.2){
+    scrollProj()
+  } else if (scroll/window.innerHeight < 0.2){
+    home()
+  }
+});
+
+
 function home(){
     let freccia = document.getElementById("icona-freccia");
     freccia.style.rotate = "0deg";
@@ -90,8 +100,8 @@ function home(){
     editorialIcon.style.pointerEvents = "auto"; 
 }
 
-window.addEventListener('scroll', () => {
-    let freccia = document.getElementById("icona-freccia");
+function scrollProj(){
+  let freccia = document.getElementById("icona-freccia");
     freccia.style.rotate = "180deg";
     freccia.style.cursor = "pointer"; 
     let scroll = document.getElementById("scroll");
@@ -137,8 +147,7 @@ window.addEventListener('scroll', () => {
     let editorialIcon = document.getElementById("editorialIcon");
     editorialIcon.style.pointerEvents = "none"; 
     freccia.style.cursor = "pointer"; 
-  });
-
+}
 
 
   function scrollTo(element) {
@@ -185,6 +194,8 @@ window.addEventListener('scroll', () => {
   function progetto3(){
     window.location.href = './pages/progetto3.html'
 }
+
+
 
 function menu(){
   if (i==0){
