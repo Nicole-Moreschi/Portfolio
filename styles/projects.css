@@ -232,6 +232,10 @@ a {
 	align-items: center;
 }
 
+#slides{
+	height: 80vh;
+}
+
 #abstract{
 	height: 40vh;
 	/* padding-top: 5vh; */
@@ -349,6 +353,7 @@ background-color: #000000;
 #progettuale{
 	width: 100vw;
 	margin-left: -19.7vw;
+	margin-bottom: 20vh;
 	/* z-index: +1; */
 }
 
