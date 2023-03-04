@@ -11,7 +11,7 @@ a {
   }
 
   
-  ::-webkit-scrollbar {
+  .body:-webkit-scrollbar {
     display: none;
 }
   
@@ -236,6 +236,37 @@ a {
 	height: 80vh;
 }
 
+#slides-cell{
+	height: 90vh;
+}
+
+#boxscroll{
+	height: 80vh;
+	display: flex;
+	justify-content: flex-start;
+	overflow-x: scroll;
+}
+
+#boxscroll::-webkit-scrollbar {
+	display: visible;
+  }
+
+#slides2{
+	height: 45vh;
+	margin-top: 20vh;
+}
+
+#slides3{
+	height: 45vh;
+	margin-bottom: 20vh;
+}
+
+#scrollslide{
+	height: 100%;
+	width: auto;
+}
+
+
 #abstract{
 	height: 40vh;
 	/* padding-top: 5vh; */
@@ -334,6 +365,13 @@ a {
 	height: auto;
 }
 
+.preview-cell{
+	height: 60vh;
+	border: 0.4vw solid #000000;
+	border-radius: 2vw;
+	background-color: #000000;
+}
+
 .cover-img{
 	height: auto;
 }
@@ -349,6 +387,12 @@ border: 0.4vw solid #000000;
 border-radius: 2vw;
 background-color: #000000;
 }
+
+#videoPc{
+	border: 0.4vw solid #000000;
+	border-radius: 2vw;
+	background-color: #000000;
+	}
 
 #progettuale{
 	width: 100vw;
