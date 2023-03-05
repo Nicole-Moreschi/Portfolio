@@ -13,6 +13,16 @@ document.addEventListener("mousemove", (e) => {
   saveCursorPosition(e.clientX, e.clientY);
 });
 
+
+if(window.innerHeight > window.innerWidth){
+  alert("Please rotate your device horizontally :)");
+}
+
+var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+if (is_safari) {
+  alert("Please open this website via chrome browser :)");
+}
+
 let i = 0;
 
 function overImg() {
@@ -152,6 +162,7 @@ function scrollTo(element) {
     top: element.offsetTop,
   });
 }
+
 document.getElementById("datavix-text").addEventListener("click", () => {
   scrollTo(document.getElementById("prog1"));
 });
