@@ -364,6 +364,10 @@ a {
 	width: 100%;
 }
 
+#prev7{
+	margin-top: -10vh;
+}
+
 .preview-img{
 	width: 100%;
 	height: auto;

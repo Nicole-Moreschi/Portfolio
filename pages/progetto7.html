@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles/projects.css">
+  <title>Nicole Moreschi</title>
+</head>
+
+<body>
+
+  <div class="scroll" id="scroll">
+    <img id="icona-freccia" src="../assets/icons/arrow.svg">
+  </div>
+
+  <div class="sx" id="sx">
+    <div class="back"><img class="icona-back" src="../assets/icons/arrow.svg" onclick="index()"></div>
+  </div>
+  
+  <div class="content" id="content">
+
+    <div class="header">
+      <div class="sx" id="sx">
+        <!-- <div class="back"><img class="icona-back" src="../assets/icons/arrow.svg" onclick="index()"></div> -->
+      </div>
+      <div class="dx">
+        <div id="get-in-touch" onmouseover="contatti()" onmouseout="noContatti()">Get in touch</div>
+        <div id="links" onmouseover="contatti()" onmouseout="noContatti()">
+          <a href="mailto:nicolemoreschi98@gmail.com" target="_blank" class="contatti">mail</a>
+          <a href="https://www.linkedin.com/in/nicole-moreschi" target="_blank" class="contatti">in</a>
+          <a href="https://www.behance.net/nicolemoreschi1" target="_blank" class="contatti">Bē</a>
+        </div>
+        <img class="icona-menu" id="iconaMenu" src="../assets/icons/menu.svg" onclick="menu()">
+      </div>
+    </div>
+  </div>
+
+  <!-- scroll progetto -->
+
+  <div class="sezioni" id="sez0" onmousemove="home()">
+    <div class="introProj">
+      <div class="tag">
+        <img class="icone-filtri" src="../assets/icons/branding.svg">
+        <div class="t-tag" id="branding-text">BRANDING</div>
+      </div>
+      <div class="infoProj">
+        <div class="nomeProj" id="nomeProj">Midnight Dreary</div>
+        <div class="info" id="date">DATE <br><span class="text">Jun 2020</span></div>
+        <div class="info" id="team">TEAM <br><span class="text">Moreschi Nicole</span></div>
+        <div class="info" id="software">TOOLS <br><span class="text">Id - Ai - Ps</span></div>
+        <a href="https://polimi365-my.sharepoint.com/:b:/g/personal/10670722_polimi_it/Ee-7ZGRQpdFDjIOpsmRrErkBfxiLSYapHjDTlHYXRlSOJg?e=aEPcbN"
+          target="_blank" class="info" id="tesi">FULL PROJECT</a>
+      </div>
+      <div class="immagine">
+        <img class="cover-img" id="prev7" src="../assets/previews/intro-proj/preview7.png">
+      </div>
+    </div>
+  </div>
+  <div class="scroll-progetto" id="scrollProgetto">
+    <div class="sezioni"></div>
+    <div class="sezioni" id="abstract">
+      <p class="Tabstract">The TV series's branding is based on E. A. Poe's Tales of Terror, reinterpreted from a contemporary point of view. <br>
+        The visual identity of the series maintains its core themes, hence the dreamlike atmosphere and the sense of madness (represented through a rough brushstroke). <br>
+        This concept was the starting point for the signs system development,
+        which coordinates all the communication elements. <br>The branding design was followed by the production
+        of the advertising campaign, the merchandising, the trailer (made in motion graphics) and the website.</p>
+    </div>
+    <div class="sezioni" id="progettuale">
+      <video width="100%" height="auto" id="videoProgettuale" loop muted>
+        <source src="../assets/progetti/Midnight/1.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="sezioni">
+      <img class="preview-img" src="../assets/progetti/Midnight/2.jpg">
+    </div>
+    <div class="sezioni">
+      <img class="preview-img" src="../assets/progetti/Midnight/3.jpg">
+    </div>
+    <div class="sezioni">
+      <img class="preview-img" src="../assets/progetti/Midnight/4.jpg">
+    </div>
+    <div class="sezioni">
+      <img class="preview-img" src="../assets/progetti/Midnight/5.jpg">
+    </div>
+    <div class="sezioni">
+      <img class="preview-img" src="../assets/progetti/Midnight/6.jpg">
+    </div>
+    <!-- <div class="sezioni">
+      <img class="preview-img" src="../assets/progetti/Midnight/7.jpg">
+    </div> -->
+    <!-- <div class="sezioni">
+      <img class="preview-img" src="../assets/progetti/Midnight/8.jpg">
+    </div> -->
+    <!-- <div class="sezioni">
+      <img class="preview-img" src="../assets/progetti/Midnight/9.jpg">
+    </div> -->
+    <!-- <div class="sezioni">
+      <img class="preview-img" src="../assets/progetti/Midnight/10.jpg">
+    </div> -->
+    <div class="sezioni">
+      work in progress
+    </div>
+  </div>
+
+
+  <!-- menu -->
+
+  <div class="menuProgetti" id="menuProgetti">
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto1">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="../assets/icons/dataviz.svg">
+        <div class="t-tag" id="datavix-text">DATA VIZ</div>
+      </div>
+      <div class="anno">2023</div>
+      <div class="titolo" onmouseover="anteprima1()" onmouseout="NOanteprima1()" onclick="progetto1()">Eye to Ai</div>
+      <div class="null"></div>
+      <div class="vai"><img src="../assets/icons/arrow.svg" class="arrow" onclick="progetto1()"></div>
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto2">
+      <div class="tag" id="tagUxUi">
+        <img class="icone-filtri" src="../assets/icons/ux-ui.svg">
+        <div class="t-tag" id="uxui-text">UX / UI</div>
+      </div>
+      <div class="anno">2022</div>
+      <div class="titolo" onmouseover="anteprima2()" onmouseout="NOanteprima2()" onclick="progetto2()">Todo</div>
+      <div class="null"></div>
+      <div class="vai"><img src="../assets/icons/arrow.svg" class="arrow" onclick="progetto2()"></div>
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto3">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="../assets/icons/interaction.svg">
+        <div class="t-tag" id="datavix-text">INTERACTION</div>
+      </div>
+      <div class="anno">2021</div>
+      <div class="titolo" onmouseover="anteprima3()" onmouseout="NOanteprima3()" onclick="progetto3()">12°Uomo</div>
+      <div class="null"></div>
+      <div class="vai"><img src="../assets/icons/arrow.svg" class="arrow" onclick="progetto3()"></div>
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto4">
+      <div class="tag" id="tagUxUi">
+        <img class="icone-filtri" src="../assets/icons/interaction.svg">
+        <div class="t-tag" id="uxui-text">INTERACTION</div>
+      </div>
+      <div class="anno">2022</div>
+      <div class="titolo" onmouseover="anteprima4()" onmouseout="NOanteprima4()" onclick="progetto4()">One More Candy
+      </div>
+      <div class="null"></div>
+      <div class="vai"><img src="../assets/icons/arrow.svg" class="arrow" onclick="progetto4()"></div>
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto5">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="../assets/icons/interaction.svg">
+        <div class="t-tag" id="datavix-text">INTERACTION</div>
+      </div>
+      <div class="anno">2021</div>
+      <div class="titolo" onmouseover="anteprima5()" onmouseout="NOanteprima5()" onclick="progetto5()">Mouse Party</div>
+      <div class="null"></div>
+      <div class="vai"><img src="../assets/icons/arrow.svg" class="arrow" onclick="progetto5()"></div>
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto6">
+      <div class="tag" id="tagUxUi">
+        <img class="icone-filtri" src="../assets/icons/interaction.svg">
+        <div class="t-tag" id="uxui-text">INTERACTION</div>
+      </div>
+      <div class="anno">2020</div>
+      <div class="titolo" onmouseover="anteprima6()" onmouseout="NOanteprima6()" onclick="progetto6()">Robbin’ the Crown
+      </div>
+      <div class="null"></div>
+      <div class="vai"><img src="../assets/icons/arrow.svg" class="arrow" onclick="progetto6()"></div>
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto7">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="../assets/icons/branding.svg">
+        <div class="t-tag" id="datavix-text">BRANDING</div>
+      </div>
+      <div class="anno">2020</div>
+      <div class="titolo" onmouseover="anteprima7()" onmouseout="NOanteprima7()" onclick="progetto7()">Midnight Dreary
+      </div>
+      <div class="null"></div>
+      <div class="vai"><img src="../assets/icons/arrow.svg" class="arrow" onclick="progetto7()"></div>
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto8">
+      <div class="tag" id="tagUxUi">
+        <img class="icone-filtri" src="../assets/icons/branding.svg">
+        <div class="t-tag" id="uxui-text">BRANDING</div>
+      </div>
+      <div class="anno">2021</div>
+      <div class="titolo" onmouseover="anteprima8()" onmouseout="NOanteprima8()" onclick="progetto8()">Workshop Negroni
+      </div>
+      <div class="null"></div>
+      <div class="vai"><img src="../assets/icons/arrow.svg" class="arrow" onclick="progetto8()"></div>
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto9">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="../assets/icons/editorial.svg">
+        <div class="t-tag" id="datavix-text">EDITORIAL</div>
+      </div>
+      <div class="anno">2020</div>
+      <div class="titolo" onmouseover="anteprima9()" onmouseout="NOanteprima9()" onclick="progetto9()">Specimen Fedra
+      </div>
+      <div class="null"></div>
+      <div class="vai"><img src="../assets/icons/arrow.svg" class="arrow" onclick="progetto9()"></div>
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto10">
+      <div class="tag" id="tagUxUi">
+        <img class="icone-filtri" src="../assets/icons/editorial.svg">
+        <div class="t-tag" id="uxui-text">EDITORIAL</div>
+      </div>
+      <div class="anno">2021</div>
+      <div class="titolo" onmouseover="anteprima10()" onmouseout="NOanteprima10()" onclick="progetto10()">Golden Ratio
+      </div>
+      <div class="null"></div>
+      <div class="vai"><img src="../assets/icons/arrow.svg" class="arrow" onclick="progetto10()"></div>
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto" id="menuProgetto11">
+      <div class="tag" id="tagDataviz">
+        <img class="icone-filtri" src="../assets/icons/editorial.svg">
+        <div class="t-tag" id="datavix-text">EDITORIAL</div>
+      </div>
+      <div class="anno">2019</div>
+      <div class="titolo" onmouseover="anteprima11()" onmouseout="NOanteprima11()" onclick="progetto11()">Universi</div>
+      <div class="null"></div>
+      <div class="vai"><img src="../assets/icons/arrow.svg" class="arrow" onclick="progetto11()"></div>
+    </div>
+    <div class="raw"></div>
+    <div class="menuProgetto"></div>
+    <div class="menuProgetto"></div>
+  </div>
+  <img class="preview-img-menu" id="menuPrev1" src="../assets/previews/preview1.png">
+  <img class="preview-img-menu" id="menuPrev2" src="../assets/previews/preview2.png">
+  <img class="preview-img-menu" id="menuPrev3" src="../assets/previews/preview3.png">
+  <img class="preview-img-menu" id="menuPrev4" src="../assets/previews/preview4.png">
+  <img class="preview-img-menu" id="menuPrev5" src="../assets/previews/preview5.png">
+  <img class="preview-img-menu" id="menuPrev6" src="../assets/previews/preview6.png">
+  <img class="preview-img-menu" id="menuPrev7" src="../assets/previews/preview7.png">
+  <img class="preview-img-menu" id="menuPrev8" src="../assets/previews/preview8.png">
+  <img class="preview-img-menu" id="menuPrev9" src="../assets/previews/preview9.png">
+  <img class="preview-img-menu" id="menuPrev10" src="../assets/previews/preview10.png">
+  <img class="preview-img-menu" id="menuPrev11" src="../assets/previews/preview11.png">
+
+
+  <!-- js file -->
+  <script src="../scripts/projects.js"></script>
+
+
+</body>
+
+</html>
