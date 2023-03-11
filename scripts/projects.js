@@ -298,3 +298,8 @@ function progetto10() {
 function progetto11() {
   window.location.href = "./progetto11.html";
 }
+
+function noBar(){
+  let bar = document.getElementById("scrollbar");
+  bar.style.display = "none"; 
+}

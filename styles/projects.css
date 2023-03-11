@@ -10,10 +10,20 @@ a {
 	/* no underline */
   }
 
-  
-  .body:-webkit-scrollbar {
-    display: none;
-}
+
+/* non toccare la scrollbar che funziona per opera dello spirito santo */
+ 	html::-webkit-scrollbar {
+	width: 0px;
+	}
+	html::-webkit-scrollbar-thumb {
+	background: #000000;
+	}
+	.menuProgetti::-webkit-scrollbar {
+		width: 0px;
+		}
+	.menuProgetti::-webkit-scrollbar-thumb {
+		background: #000000;
+		}
   
   * {
 	margin: 0;
@@ -232,6 +242,17 @@ a {
 	align-items: center;
 }
 
+#sezVerticale{
+	height: 100vh;	
+	width: auto;
+}
+
+
+#sezVerticale2{
+	height: 80vh;	
+	width: auto;
+}
+
 #slides{
 	height: 80vh;
 }
@@ -245,10 +266,22 @@ a {
 	display: flex;
 	justify-content: flex-start;
 	overflow-x: scroll;
+	margin-bottom: 10vh;
 }
 
+/* non toccare la scrollbar che funziona per opera dello spirito santo */
 #boxscroll::-webkit-scrollbar {
-	display: visible;
+	scrollbar-color: rgba(0, 0, 0, 0.5); 
+  }
+
+
+
+#scrollbar{
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 22.5vw;
+	height: 0.8vh;
+	margin-top: -1.2vh;
+	border-radius: 1vw;
   }
 
 #slides2{
@@ -367,6 +400,11 @@ a {
 #prev7{
 	margin-top: -10vh;
 }
+
+#prev8{
+	margin-top: -15vh;
+}
+
 
 .preview-img{
 	width: 100%;
