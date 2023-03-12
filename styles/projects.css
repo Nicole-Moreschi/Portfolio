@@ -7,33 +7,35 @@
 a {
 	all: unset;
 	cursor: pointer;
-	/* no underline */
-  }
+}
 
 
 /* non toccare la scrollbar che funziona per opera dello spirito santo */
- 	html::-webkit-scrollbar {
+html::-webkit-scrollbar {
 	width: 0px;
-	}
-	html::-webkit-scrollbar-thumb {
+}
+
+html::-webkit-scrollbar-thumb {
 	background: #000000;
-	}
-	.menuProgetti::-webkit-scrollbar {
-		width: 0px;
-		}
-	.menuProgetti::-webkit-scrollbar-thumb {
-		background: #000000;
-		}
-  
-  * {
+}
+
+.menuProgetti::-webkit-scrollbar {
+	width: 0px;
+}
+
+.menuProgetti::-webkit-scrollbar-thumb {
+	background: #000000;
+}
+
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: sans-serif;
-  }
+}
 
 
-  body {
+body {
 	position: absolute;
 	background-color: #F2F2F2;
 	user-select: none;
@@ -51,29 +53,29 @@ a {
 	height: 100vh;
 	overflow: hidden;
 	display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
 	position: fixed;
 	z-index: -1;
 }
 
-.header{
+.header {
 	width: 100%;
 	height: 20vh;
 	padding-top: 5vh;
 	display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
-.sx{
+.sx {
 	width: auto;
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 	gap: 8.2vw;
 }
 
-.back{
+.back {
 	position: fixed;
 	width: 18.2vw;
 	height: 20vh;
@@ -84,7 +86,7 @@ a {
 	z-index: 10;
 }
 
-.icona-back{
+.icona-back {
 	height: 1.5vw;
 	rotate: 90deg;
 	padding-left: 0.7vw;
@@ -92,16 +94,16 @@ a {
 }
 
 
-.dx{
+.dx {
 	width: auto;
 	display: flex;
 	flex-direction: row;
-    justify-content: flex-end;
+	justify-content: flex-end;
 	align-items: flex-start;
 	gap: 4.5vw;
 }
 
-.contatti{
+.contatti {
 	width: auto;
 	font-size: 1.26vw;
 	font-family: 'Sora';
@@ -113,7 +115,7 @@ a {
 }
 
 
-#get-in-touch{
+#get-in-touch {
 	width: auto;
 	font-size: 1.26vw;
 	font-family: 'Sora';
@@ -125,48 +127,48 @@ a {
 	cursor: pointer;
 }
 
-#links{
+#links {
 	width: 7.9vw;
 	display: flex;
 	flex-direction: row;
-    justify-content: space-between;
+	justify-content: space-between;
 	align-items: flex-start;
 	display: none;
 	cursor: pointer;
 }
 
-.icona-menu{
+.icona-menu {
 	width: 1.5vw;
 	padding-top: 0.5vh;
 	cursor: pointer;
 }
 
-.filtri{
+.filtri {
 	width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	gap: 1.5vw;
-	translate: 0, -50% ;
+	translate: 0, -50%;
 
 }
 
-.box-filtri{
+.box-filtri {
 	width: 18.2vw;
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	gap: 1.2vw;
 }
 
-.icone-filtri{
+.icone-filtri {
 	height: 2vw;
 	width: 3vw;
 	cursor: pointer;
 }
 
-.t-filtri{
+.t-filtri {
 	font-size: 0.65vw;
 	font-family: 'Sora';
 	font-weight: 600;
@@ -174,20 +176,21 @@ a {
 	text-underline-offset: 0.25vw;
 	text-decoration-thickness: 0.1vw;
 }
-.t-filtri:hover{
+
+.t-filtri:hover {
 	cursor: pointer;
 }
 
 
-.scroll{
-	position:fixed;
+.scroll {
+	position: fixed;
 	z-index: +1;
 	margin-left: 50%;
 	width: auto;
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
 	gap: 1.2vw;
 	transform: translateX(-50%);
 	animation-name: freccia;
@@ -198,25 +201,41 @@ a {
 }
 
 @keyframes freccia {
-	0% {margin-top: 83vh;}
-	50% {margin-top: 86vh;}
-	100% {margin-top: 83vh;}
-  }
+	0% {
+		margin-top: 83vh;
+	}
 
-  @keyframes stop {
-	0% {margin-top: 86vh;}
-	50% {margin-top: 86vh;}
-	100% {margin-top: 86vh;}
-  }
+	50% {
+		margin-top: 86vh;
+	}
 
-#t-works{
+	100% {
+		margin-top: 83vh;
+	}
+}
+
+@keyframes stop {
+	0% {
+		margin-top: 86vh;
+	}
+
+	50% {
+		margin-top: 86vh;
+	}
+
+	100% {
+		margin-top: 86vh;
+	}
+}
+
+#t-works {
 	font-size: 0.9vw;
 	font-family: 'Sora';
 	font-weight: 500;
 	transition: all 500ms ease;
 }
 
-#icona-freccia{
+#icona-freccia {
 	height: 1.5vw;
 	rotate: 0deg;
 	transition: all 500ms ease;
@@ -226,14 +245,14 @@ a {
 
 
 
-.scroll-progetto{
+.scroll-progetto {
 	position: absolute;
 	margin-left: 19.7vw;
 	width: 60.6vw;
 	height: auto;
 }
 
-.sezioni{
+.sezioni {
 	width: 100%;
 	height: 100vh;
 	display: flex;
@@ -242,26 +261,26 @@ a {
 	align-items: center;
 }
 
-#sezVerticale{
-	height: 100vh;	
+#sezVerticale {
+	height: 100vh;
 	width: auto;
 }
 
 
-#sezVerticale2{
-	height: 80vh;	
+#sezVerticale2 {
+	height: 80vh;
 	width: auto;
 }
 
-#slides{
+#slides {
 	height: 80vh;
 }
 
-#slides-cell{
+#slides-cell {
 	height: 90vh;
 }
 
-#boxscroll{
+#boxscroll {
 	height: 80vh;
 	display: flex;
 	justify-content: flex-start;
@@ -271,36 +290,36 @@ a {
 
 /* non toccare la scrollbar che funziona per opera dello spirito santo */
 #boxscroll::-webkit-scrollbar {
-	scrollbar-color: rgba(0, 0, 0, 0.5); 
-  }
+	scrollbar-color: rgba(0, 0, 0, 0.5);
+}
 
 
 
-#scrollbar{
+#scrollbar {
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 22.5vw;
 	height: 0.8vh;
 	margin-top: -1.2vh;
 	border-radius: 1vw;
-  }
+}
 
-#slides2{
+#slides2 {
 	height: 45vh;
 	margin-top: 20vh;
 }
 
-#slides3{
+#slides3 {
 	height: 45vh;
 	margin-bottom: 20vh;
 }
 
-#scrollslide{
+#scrollslide {
 	height: 100%;
 	width: auto;
 }
 
 
-#abstract{
+#abstract {
 	height: 40vh;
 	/* padding-top: 5vh; */
 	display: flex;
@@ -308,60 +327,69 @@ a {
 	flex-wrap: wrap;
 	align-items: flex-start;
 	z-index: -1;
+}
 
+#abstract9 {
+	height: 30vh;
+	/* padding-top: 5vh; */
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	z-index: -1;
 }
 
 
-#sez0{
-	position:absolute;
+#sez0 {
+	position: absolute;
 	margin-top: 20vh;
 	margin-left: 1.5vw;
 	width: 97vw;
 	height: 80vh;
 	display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
 	align-items: center;
-	gap: 0.1vw; 
+	gap: 0.1vw;
 	z-index: +1;
 }
 
-.introProj{
+.introProj {
 	width: 97vw;
 	height: 80vh;
 	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: flex-start;
 	gap: 1.5vw;
 	z-index: +1;
 }
 
-.infoProj{
+.infoProj {
 	width: 18.2vw;
 	height: auto;
 	display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
 	align-items: flex-start;
 	z-index: +1;
 
 }
 
-.nomeProj{
+.nomeProj {
 	width: 18.2vw;
 	font-size: 1.26vw;
 	font-family: 'Sora';
 	font-weight: 400;
 	height: 10vh;
 	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 	margin-bottom: 1vw;
 }
 
-.info{
+.info {
 	width: 18.2vw;
 	font-size: 0.65vw;
 	font-family: 'Sora';
@@ -370,13 +398,13 @@ a {
 	padding-bottom: 1.5vw;
 }
 
-.text{
+.text {
 	font-size: 0.7vw;
 	font-family: 'Sora';
 	font-weight: 400;
 }
 
-#tesi{
+#tesi {
 	text-decoration: underline;
 	text-underline-offset: 0.25vw;
 	text-decoration-thickness: 0.1vw;
@@ -384,7 +412,7 @@ a {
 	padding-bottom: 0.5vw;
 }
 
-.immagine{
+.immagine {
 	width: 57.6vw;
 	height: auto;
 	display: flex;
@@ -392,26 +420,26 @@ a {
 	/* overflow: hidden; */
 }
 
-.cover-img{
+.cover-img {
 	height: auto;
 	width: 100%;
 }
 
-#prev7{
+#prev7 {
 	margin-top: -10vh;
 }
 
-#prev8{
-	margin-top: -15vh;
+#prev8 {
+	margin-top: -7vh;
 }
 
 
-.preview-img{
+.preview-img {
 	width: 100%;
 	height: auto;
 }
 
-.preview-cell{
+.preview-cell {
 	height: 60vh;
 	border: 0.4vw solid #000000;
 	border-radius: 2vw;
@@ -420,25 +448,25 @@ a {
 
 
 
-.Tabstract{
+.Tabstract {
 	font-size: 1.26vw;
 	font-family: 'Sora';
 	font-weight: 400;
 }
 
-.videoPc{
-border: 0.4vw solid #000000;
-border-radius: 2vw;
-background-color: #000000;
-}
-
-#videoPc{
+.videoPc {
 	border: 0.4vw solid #000000;
 	border-radius: 2vw;
 	background-color: #000000;
-	}
+}
 
-#progettuale{
+#videoPc {
+	border: 0.4vw solid #000000;
+	border-radius: 2vw;
+	background-color: #000000;
+}
+
+#progettuale {
 	width: 100vw;
 	margin-left: -19.7vw;
 	margin-bottom: 20vh;
@@ -447,59 +475,59 @@ background-color: #000000;
 
 /* menu progetti */
 
-.menuProgetti{
-	position:absolute;
+.menuProgetti {
+	position: absolute;
 	margin-top: 20vh;
 	margin-left: 1.5vw;
 	width: 97vw;
 	height: 80vh;
 	display: flex;
-    /* flex-direction: column; */
-    justify-content: flex-start;
+	/* flex-direction: column; */
+	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
 	overflow-y: scroll;
-	gap: 0.1vw; 
+	gap: 0.1vw;
 	z-index: 1;
 	display: none;
 }
 
-.menuProgetto{
+.menuProgetto {
 	width: 97vw;
 	height: 10vh;
 	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 	gap: 1.5vw;
 }
 
-.tag{
+.tag {
 	width: 18.2vw;
 	padding-left: 1.5vw;
 	height: 10vh;
 	display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 	gap: 1.3vw;
 }
 
-.t-tag{
+.t-tag {
 	font-size: 0.65vw;
 	font-family: 'Sora';
 	font-weight: 600;
 }
 
 
-.anno{
+.anno {
 	width: 18.2vw;
 	font-size: 1.26vw;
 	font-family: 'Sora';
 	font-weight: 400;
 }
 
-.titolo{
+.titolo {
 	width: 18.2vw;
 	font-size: 1.26vw;
 	font-family: 'Sora';
@@ -510,11 +538,11 @@ background-color: #000000;
 	cursor: pointer;
 }
 
-.null{
+.null {
 	width: 18.2vw;
 }
 
-.vai{
+.vai {
 	width: 18.2vw;
 	display: flex;
 	justify-content: flex-end;
@@ -522,19 +550,19 @@ background-color: #000000;
 	cursor: pointer;
 }
 
-.arrow{
+.arrow {
 	height: 1.5vw;
 	rotate: -90deg;
 	padding-right: 0.7vw;
 }
 
-.raw{
+.raw {
 	width: 100%;
 	height: 0.1vw;
 	background-color: black;
 }
 
-.preview-img-menu{
+.preview-img-menu {
 	position: absolute;
 	z-index: 1;
 	margin-top: var(--y);

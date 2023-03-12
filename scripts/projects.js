@@ -222,7 +222,7 @@ window.addEventListener("scroll", (event) => {
 function home(){
   let freccia = document.getElementById("icona-freccia");
   freccia.style.rotate = "0deg";
-  freccia.style.cursor = "cursor"; 
+  freccia.style.cursor = "pointer"; 
   let scroll = document.getElementById("scroll");
   scroll.style.animationName="freccia" 
 }
