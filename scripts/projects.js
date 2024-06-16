@@ -1,4 +1,31 @@
 
+//breackpoint mobile
+if(window.innerHeight > window.innerWidth){
+  let css = document.getElementById("cssProgetti");
+  css.href = "../styles/projects_mobile.css"
+
+  // let bio2 = document.getElementById("bio2");
+  // bio2.style.display = "none";
+
+  // let getintouch = document.getElementById("get-in-touch");
+  // getintouch.style.display = "none";
+
+  // let hello = document.getElementById("hello");
+  // hello.style.display = "none";
+
+  // let credits = document.getElementById("credits");
+  // credits.style.display = "none";
+
+  // let tWorks = document.getElementById("t-works");
+  // tWorks.style.display = "none";
+
+  // let gap2 = document.getElementById("gap2");
+  // gap2.style.display = "none";
+  
+  // opacità = 0.3;
+}
+
+
 //---------------------------- get mouse x,y -------------------------//
 const pos = { x : 0, y : 0 };
 

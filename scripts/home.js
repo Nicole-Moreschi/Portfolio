@@ -1,3 +1,32 @@
+let i = 0;
+let opacità = 0.5;
+
+//breackpoint mobile
+// if(window.innerHeight > window.innerWidth){
+//   let css = document.getElementById("prova_css");
+//   css.href = "./styles/home_mobile.css"
+
+//   let bio2 = document.getElementById("bio2");
+//   bio2.style.display = "none";
+
+//   let getintouch = document.getElementById("get-in-touch");
+//   getintouch.style.display = "none";
+
+//   let hello = document.getElementById("hello");
+//   hello.style.display = "none";
+
+//   let credits = document.getElementById("credits");
+//   credits.style.display = "none";
+
+//   let tWorks = document.getElementById("t-works");
+//   tWorks.style.display = "none";
+
+//   let gap2 = document.getElementById("gap2");
+//   gap2.style.display = "none";
+  
+//   opacità = 0.3;
+// }
+
 //---------------------------- get mouse x,y -------------------------//
 const pos = { x: 0, y: 0 };
 
@@ -15,7 +44,7 @@ document.addEventListener("mousemove", (e) => {
 
 
 if(window.innerHeight > window.innerWidth){
-  alert("Please rotate your device horizontally :)");
+  alert("This website is still not optimized for mobile browsing :(");
 }
 
 var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -23,11 +52,15 @@ if (is_safari) {
   alert("Please open this website via chrome browser :)");
 }
 
-let i = 0;
+
 
 function overImg() {
+  if(window.innerHeight < window.innerWidth){
   let imgN = document.getElementById("imgNicole");
   imgN.style.display = "block";
+} else {
+window.location="https://www.linkedin.com/in/nicole-moreschi"
+}
 }
 
 function noOverImg() {
@@ -64,8 +97,9 @@ function home() {
   freccia.style.cursor = "pointer";
   let scroll = document.getElementById("scroll");
   scroll.style.animationName = "freccia";
+  if(window.innerHeight < window.innerWidth){
   let testo = document.getElementById("t-works");
-  testo.style.display = "flex";
+  testo.style.display = "flex";}
   let content = document.getElementById("content");
   content.style.zIndex = "1";
 
@@ -118,36 +152,36 @@ function scrollProj() {
   content.style.zIndex = "-1";
 
   let filtri1 = document.getElementById("dataviz");
-  filtri1.style.opacity = "0.5";
-  filtri1.style.filter = "blur(0.2vw)";
+  filtri1.style.opacity = opacità;
+  filtri1.style.filter = "blur(3px)";
   let dataviz = document.getElementById("datavix-text");
   dataviz.style.pointerEvents = "none";
   let datavizIcon = document.getElementById("datavixIcon");
   datavizIcon.style.pointerEvents = "none";
   let filtri2 = document.getElementById("ux-ui");
-  filtri2.style.opacity = "0.5";
-  filtri2.style.filter = "blur(0.2vw)";
+  filtri2.style.opacity = opacità;
+  filtri2.style.filter = "blur(3px)";
   let uxui = document.getElementById("ux-ui-text");
   uxui.style.pointerEvents = "none";
   let uxuiIcon = document.getElementById("uxuiIcon");
   uxuiIcon.style.pointerEvents = "none";
   let filtri3 = document.getElementById("interaction");
-  filtri3.style.opacity = "0.5";
-  filtri3.style.filter = "blur(0.2vw)";
+  filtri3.style.opacity = opacità;
+  filtri3.style.filter = "blur(3px)";
   let interaction = document.getElementById("interaction-text");
   interaction.style.pointerEvents = "none";
   let interactionIcon = document.getElementById("interactionIcon");
   interactionIcon.style.pointerEvents = "none";
   let filtri4 = document.getElementById("branding");
-  filtri4.style.opacity = "0.5";
-  filtri4.style.filter = "blur(0.2vw)";
+  filtri4.style.opacity = opacità;
+  filtri4.style.filter = "blur(3px)";
   let branding = document.getElementById("branding-text");
   branding.style.pointerEvents = "none";
   let brandingIcon = document.getElementById("brandingIcon");
   brandingIcon.style.pointerEvents = "none";
   let filtri5 = document.getElementById("editorial");
-  filtri5.style.opacity = "0.5";
-  filtri5.style.filter = "blur(0.2vw)";
+  filtri5.style.opacity = opacità;
+  filtri5.style.filter = "blur(3px)";
   let editorial = document.getElementById("editorial-text");
   editorial.style.pointerEvents = "none";
   let editorialIcon = document.getElementById("editorialIcon");
@@ -164,35 +198,65 @@ function scrollTo(element) {
 }
 
 document.getElementById("datavix-text").addEventListener("click", () => {
-  scrollTo(document.getElementById("prog1"));
-});
+  if(window.innerHeight > window.innerWidth){
+    window.scrollBy({ top: 600, behavior: "smooth"})
+  } else{
+    scrollTo(document.getElementById("prog1"));
+  }});
 document.getElementById("datavixIcon").addEventListener("click", () => {
-  scrollTo(document.getElementById("prog1"));
-});
+  if(window.innerHeight > window.innerWidth){
+    window.scrollBy({ top: 600, behavior: "smooth"})
+  } else{
+    scrollTo(document.getElementById("prog1"));
+  }});
 document.getElementById("ux-ui-text").addEventListener("click", () => {
-  scrollTo(document.getElementById("prog2"));
-});
+  if(window.innerHeight > window.innerWidth){
+    window.scrollBy({ top: 950, behavior: "smooth"})
+  } else{
+    scrollTo(document.getElementById("prog2"));
+  }});
 document.getElementById("uxuiIcon").addEventListener("click", () => {
-  scrollTo(document.getElementById("prog2"));
-});
+  if(window.innerHeight > window.innerWidth){
+    window.scrollBy({ top: 950, behavior: "smooth"})
+  } else{
+    scrollTo(document.getElementById("prog2"));
+  }});
 document.getElementById("interaction-text").addEventListener("click", () => {
-  scrollTo(document.getElementById("prog3"));
-});
+  if(window.innerHeight > window.innerWidth){
+    window.scrollBy({ top: 1250, behavior: "smooth"})
+  } else{
+    scrollTo(document.getElementById("prog3"));
+  }});
 document.getElementById("interactionIcon").addEventListener("click", () => {
-  scrollTo(document.getElementById("prog3"));
-});
+  if(window.innerHeight > window.innerWidth){
+    window.scrollBy({ top: 1250, behavior: "smooth"})
+  } else{
+    scrollTo(document.getElementById("prog3"));
+  }});
 document.getElementById("branding-text").addEventListener("click", () => {
-  scrollTo(document.getElementById("prog7"));
-});
+if(window.innerHeight > window.innerWidth){
+    window.scrollBy({ top: 2600, behavior: "smooth"})
+  } else{
+    scrollTo(document.getElementById("prog7"));
+  }});
 document.getElementById("brandingIcon").addEventListener("click", () => {
-  scrollTo(document.getElementById("prog7"));
-});
+if(window.innerHeight > window.innerWidth){
+    window.scrollBy({ top: 2600, behavior: "smooth"})
+  } else{
+    scrollTo(document.getElementById("prog7"));
+  }});
 document.getElementById("editorial-text").addEventListener("click", () => {
-  scrollTo(document.getElementById("prog9"));
-});
+if(window.innerHeight > window.innerWidth){
+    window.scrollBy({ top: 3300, behavior: "smooth"})
+  } else{
+    scrollTo(document.getElementById("prog9"));
+  }});
 document.getElementById("editorialIcon").addEventListener("click", () => {
-  scrollTo(document.getElementById("prog9"));
-});
+if(window.innerHeight > window.innerWidth){
+    window.scrollBy({ top: 3300, behavior: "smooth"})
+  } else{
+    scrollTo(document.getElementById("prog9"));
+  }});
 document.getElementById("icona-freccia").addEventListener("click", () => {
   scrollTo(document.getElementById("sez0"));
 });
@@ -240,7 +304,7 @@ function menu() {
         
     let apriMenu = document.getElementById("scroll-progetti");
     apriMenu.style.opacity = "0.25";
-    apriMenu.style.filter = "blur(0.2vw)";
+    apriMenu.style.filter = "blur(3px)";
 
     let menuProgetti = document.getElementById("menuProgetti");
     menuProgetti.style.display = "flex";
@@ -261,27 +325,27 @@ function menu() {
 
     let filtri1 = document.getElementById("dataviz");
     filtri1.style.opacity = "0.25";
-    filtri1.style.filter = "blur(0.2vw)";
+    filtri1.style.filter = "blur(3px)";
     let dataviz = document.getElementById("datavix-text");
     dataviz.style.pointerEvents = "none";
     let filtri2 = document.getElementById("ux-ui");
     filtri2.style.opacity = "0.25";
-    filtri2.style.filter = "blur(0.2vw)";
+    filtri2.style.filter = "blur(3px)";
     let uxui = document.getElementById("ux-ui-text");
     uxui.style.pointerEvents = "none";
     let filtri3 = document.getElementById("interaction");
     filtri3.style.opacity = "0.25";
-    filtri3.style.filter = "blur(0.2vw)";
+    filtri3.style.filter = "blur(3px)";
     let interaction = document.getElementById("interaction-text");
     interaction.style.pointerEvents = "none";
     let filtri4 = document.getElementById("branding");
     filtri4.style.opacity = "0.25";
-    filtri4.style.filter = "blur(0.2vw)";
+    filtri4.style.filter = "blur(3px)";
     let branding = document.getElementById("branding-text");
     branding.style.pointerEvents = "none";
     let filtri5 = document.getElementById("editorial");
     filtri5.style.opacity = "0.25";
-    filtri5.style.filter = "blur(0.2vw)";
+    filtri5.style.filter = "blur(3px)";
     let editorial = document.getElementById("editorial-text");
     editorial.style.pointerEvents = "none";
     let freccia = document.getElementById("icona-freccia");
@@ -308,7 +372,7 @@ function menu() {
     let footer = document.getElementById("footer");
     footer.style.opacity = "1";
     let hello = document.getElementById("hello");
-    hello.style.opacity = "0.5";
+    hello.style.opacity = opacità;
 
     let filtri1 = document.getElementById("dataviz");
     filtri1.style.opacity = "1";
