@@ -294,6 +294,9 @@ function progetto10() {
 function progetto11() {
   window.location.href = "./pages/progetto11.html";
 }
+function progetto12() {
+  window.location.href = "./pages/progetto12.html";
+}
 
 
 function menu() {
@@ -470,6 +473,12 @@ function anteprima11() {
   anteprima.src = "./assets/previews/min/preview11.png";
 }
 
+function anteprima12() {
+  let anteprima = document.getElementById("menuPrev12");
+  anteprima.style.display = "flex";
+  anteprima.src = "./assets/previews/min/preview12.png";
+}
+
 function NOanteprima1() {
   let anteprima = document.getElementById("menuPrev1");
   anteprima.style.display = "none";
@@ -522,6 +531,11 @@ function NOanteprima10() {
 
 function NOanteprima11() {
   let anteprima = document.getElementById("menuPrev11");
+  anteprima.style.display = "none";
+}
+
+function NOanteprima12() {
+  let anteprima = document.getElementById("menuPrev12");
   anteprima.style.display = "none";
 }
 
