@@ -115,6 +115,7 @@ body {
 }
 
 
+
 #get-in-touch {
 	width: auto;
 	font-size: 1.26vw;
@@ -504,6 +505,13 @@ body {
 	font-size: 1.26vw;
 	font-family: 'Sora';
 	font-weight: 400;
+}
+
+#italic {
+	font-size: 1.26vw;
+	font-family: 'Sora';
+	font-weight: 400;
+	font-style: italic;
 }
 
 .videoPc {
